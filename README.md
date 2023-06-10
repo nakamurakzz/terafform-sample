@@ -10,3 +10,6 @@
 - tfenvで管理する
   - .terraform-versionでバージョンを指定
 
+## ロール
+- terraformの実行に必要なロールの作成
+  - 初回に1度実行する
