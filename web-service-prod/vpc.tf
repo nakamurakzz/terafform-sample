@@ -49,3 +49,16 @@ resource "aws_subnet" "web-service-prod-ec2-a-subnet" {
     Env     = "prod"
   }
 }
+
+########################################
+# IG の作成
+########################################
+resource "aws_internet_gateway" "web-service-prod-internetgateway" {
+  vpc_id = aws_vpc.vpc.id
+
+  tags = {
+    Name    = "web-service-prod-internetgateway"
+    Project = "web-service"
+    Env     = "prod"
+  }
+}
