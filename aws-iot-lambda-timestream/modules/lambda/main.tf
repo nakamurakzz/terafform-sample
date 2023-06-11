@@ -38,6 +38,9 @@ resource "aws_lambda_function" "lambda" {
   handler = "main"
   runtime = "go1.x"
 
+  memory_size = 256
+  timeout     = 30
+
   environment {
     variables = {
       temp = "hello"
