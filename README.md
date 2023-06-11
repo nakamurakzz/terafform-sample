@@ -1,4 +1,3 @@
-# terraf0rm-snowflake
 ## プロジェクト名の決定
 - web-service
 
@@ -13,3 +12,7 @@
 ## ロール
 - terraformの実行に必要なロールの作成
   - 初回に1度実行する
+
+## その他
+- .gitignore
+  - https://github.com/github/gitignore/blob/main/Terraform.gitignore
