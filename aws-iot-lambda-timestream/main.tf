@@ -25,3 +25,10 @@ provider "aws" {
 module "lambda" {
   source = "./modules/lambda"
 }
+
+
+module "iot_core" {
+  source               = "./modules/iot-core"
+  lambda_function_arn  = module.lambda.function_arn
+  lambda_function_name = module.lambda.function_name
+}
